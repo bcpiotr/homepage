@@ -1,0 +1,136 @@
+.grid-container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+.column_left {
+  float: left;
+  width: 50%;
+}
+
+.column_right {
+  float: right;
+  width: 50%;
+}
+
+.row:before,
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+div[class*="col-"] {
+  float: left;
+  min-height: 1px;
+  color: red;
+}
+
+.navbar {
+  display: inline;
+}
+
+.navbarTablet {
+  display: inline;
+}
+
+.hidden {
+  display: none;
+}
+
+.col-1 {
+  width: 8.33333%;
+}
+
+.col-2 {
+  width: 16.66667%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33333%;
+}
+
+.col-5 {
+  width: 41.66667%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33333%;
+}
+
+.col-8 {
+  width: 66.66667%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33333%;
+}
+
+.col-11 {
+  width: 91.66667%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+@font-face {
+  font-family: 'FranklinGothicHeavy';
+  src: url("../fonts/FranklinGothic-Heavy.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/FranklinGothic-Heavy.eot?#iefix") format("embedded-opentype"), url("../fonts/FranklinGothic-Heavy.woff") format("woff"), url("../fonts/FranklinGothic-Heavy.ttf") format("truetype"), url("../fonts/FranklinGothic-Heavy.svg#svgFontName") format("svg");
+  /* Legacy iOS */
+}
+
+html, p {
+  font-family: 'Ubuntu','Helvetica','Lato', 'Amaranth', sans-serif;
+  margin: 0;
+}
+
+body {
+  background-image: url("../img/background2.png");
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h2, h3, h4 {
+  font-family: 'FranklinGothicHeavy';
+  font-size: 50px;
+  color: #c0c0c2;
+}
+
+#logo p {
+  font-family: 'FranklinGothicHeavy';
+  font-size: 56px;
+  color: #2c2d2d;
+  line-height: 40px;
+}
+
+#logo p:nth-of-type(even) {
+  color: #6c9ce4;
+}
+
+#logo img {
+  width: 100%;
+}
+
+#menu {
+  text-align: right;
+}

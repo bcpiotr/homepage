@@ -1,0 +1,51 @@
+@import 'grid.scss';
+
+@font-face {
+  font-family: 'FranklinGothicHeavy';
+  src: url('../fonts/FranklinGothic-Heavy.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/FranklinGothic-Heavy.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/FranklinGothic-Heavy.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/FranklinGothic-Heavy.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/FranklinGothic-Heavy.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+
+html, p {
+  font-family: 'Ubuntu','Helvetica','Lato', 'Amaranth', sans-serif;
+  margin: 0;
+}
+
+body {
+  background-image: url("../img/background2.png");
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h2, h3, h4 {
+  font-family: 'FranklinGothicHeavy';
+  font-size: 50px;
+  color: #c0c0c2;
+}
+
+#logo {
+  p {
+    font-family: 'FranklinGothicHeavy';
+    font-size: 56px;
+    color: #2c2d2d;
+    line-height: 40px;
+  }
+  p:nth-of-type(even) {
+    color: #6c9ce4;
+  }
+
+   img {
+     width: 100%;
+   }
+}
+
+#menu {
+  text-align: right;
+}
