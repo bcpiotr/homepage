@@ -48,4 +48,73 @@ h2, h3, h4 {
 
 #menu {
   text-align: right;
+
+  .img {
+    position: relative;
+    display: inline-block;
+  }
+  img {
+
+  }
+
+  .menuText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+#aboutMe {
+  p {
+    margin-right: 10%;
+    line-height: 25px;
+  }
+}
+
+#work {
+  text-align: left;
+  ul {
+    list-style-type: none;
+    line-height: 30px;
+    padding: 0;
+  }
+}
+
+#welcome {
+  margin-bottom: 10%;
+
+  p {
+    margin-right: 10%;
+    line-height: 25px;
+  }
+}
+
+#preview {
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+#contact {
+  input[type=text] {
+     border: 1px solid #737778;
+     margin-top: 5px;
+     padding: 5px;
+     width: 70%;
+  }
+  #contact-message {
+     border: 1px solid #737778;
+     margin-top: 5px;
+     display: inline-block;
+     width: 70%;
+     padding: 5px;
+  }
+  input[type=image] {
+     margin-top: 5px;
+     padding: 5px;
+     width: 10%;
+  }
+
 }
