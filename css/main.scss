@@ -13,6 +13,7 @@
 html, p {
   font-family: 'Ubuntu','Helvetica','Lato', 'Amaranth', sans-serif;
   margin: 0;
+  font-size: 14px;
 }
 
 body {
@@ -24,9 +25,15 @@ a {
   color: inherit;
 }
 
-h2, h3, h4 {
+h2, h3 {
   font-family: 'FranklinGothicHeavy';
   font-size: 50px;
+  color: #c0c0c2;
+}
+
+h4 {
+  font-family: 'FranklinGothicHeavy';
+  font-size: 25px;
   color: #c0c0c2;
 }
 
@@ -62,6 +69,9 @@ h2, h3, h4 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    color: white;
+    font-size: 12px;
+    font-weight: bolder;
   }
 }
 
@@ -99,17 +109,19 @@ h2, h3, h4 {
 
 #contact {
   input[type=text] {
-     border: 1px solid #737778;
+     border: 1px solid #ECECED;
      margin-top: 5px;
      padding: 5px;
      width: 70%;
+     font-family: 'Ubuntu';
   }
   #contact-message {
-     border: 1px solid #737778;
+     border: 1px solid #ECECED;
      margin-top: 5px;
      display: inline-block;
      width: 70%;
      padding: 5px;
+     font-family: 'Ubuntu';
   }
   input[type=image] {
      margin-top: 5px;
@@ -117,4 +129,66 @@ h2, h3, h4 {
      width: 10%;
   }
 
+}
+
+#contactDetails {
+  p {
+    font-family: 'Ubuntu';
+    font-size: 14px;
+    display: block;
+  }
+  span {
+    color: #8181e2;
+  }
+  img {
+    float: left;
+    margin-right: 5%;
+  }
+  div {
+    display: flex; //przy mobilu zmienic
+    // justify-content: center;
+    align-items: center;
+    margin-bottom: 2%;
+  }
+}
+
+#technology {
+  text-align: center;
+  img {
+    width: 40%;
+    display: inline-block; //przy mobilu zmienic
+    margin: 0 auto;
+  }
+}
+
+#canHelp {
+  margin-top: 10%;
+  img {
+    float: left;
+  }
+  ul {
+    list-style-type: none;
+    line-height: 30px;
+    padding: 0;
+    font-family: 'Ubuntu';
+    font-size: 14px;
+  }
+}
+
+// footer
+#top {
+  text-align: right;
+}
+
+#copyright {
+  text-align: center;
+  color: gray;
+  font-size: 8px;
+  p {
+    font-size: 8px;
+  }
+}
+
+.hr {
+  border: 1px solid #F5FFFA;
 }
