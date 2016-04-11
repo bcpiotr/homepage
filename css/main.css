@@ -147,6 +147,7 @@ h4 {
 }
 
 #menu .menuText {
+  text-align: center;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -156,13 +157,35 @@ h4 {
   font-weight: bolder;
 }
 
+#aboutMe {
+  position: relative;
+}
+
 #aboutMe p {
   margin-right: 10%;
   line-height: 25px;
 }
 
+#aboutMe #aboutMeElipsis {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  color: #6c9ce4;
+  margin-right: 10%;
+}
+
+.limitedHeightAboutMe {
+  max-height: 300px;
+  overflow: hidden;
+}
+
+.unlimitedHeight {
+  max-height: 450px;
+  overflow: hidden;
+}
+
 #work {
-  text-align: left;
+  text-align: center;
 }
 
 #work ul {
