@@ -185,6 +185,15 @@ h4 {
 }
 
 #work {
+  text-align: left;
+}
+
+#work .activeLi {
+  font-weight: bold;
+  color: #6c9ce4;
+}
+
+#work p {
   text-align: center;
 }
 
@@ -192,6 +201,7 @@ h4 {
   list-style-type: none;
   line-height: 30px;
   padding: 0;
+  text-align: center;
 }
 
 #welcome {
@@ -294,4 +304,17 @@ h4 {
 
 .hr {
   border: 1px solid #F5FFFA;
+}
+
+#preview {
+  max-height: 440px;
+  max-width: 440px;
+}
+
+#preview img {
+  display: none;
+}
+
+#preview img:first-of-type {
+  display: block;
 }

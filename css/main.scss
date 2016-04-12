@@ -103,13 +103,22 @@ h4 {
 }
 
 #work {
-  text-align: center;
+  text-align: left;
+
+  .activeLi {
+    font-weight: bold;
+    color: #6c9ce4;
+  }
+  p {
+    text-align: center;
+  }
 
 
   ul {
     list-style-type: none;
     line-height: 30px;
     padding: 0;
+    text-align: center;
 
   }
 }
@@ -215,3 +224,49 @@ h4 {
 .hr {
   border: 1px solid #F5FFFA;
 }
+// PREVIEW
+#preview {
+  max-height: 440px;
+  max-width: 440px;
+  // display: flex;
+  // position: relative;
+  img {
+    display: none;
+  }
+  img:first-of-type {
+    display: block;
+  }
+}
+
+
+// div[id*="mozaic_panel"] {
+//   position: absolute;
+//   width: 20%;
+//   height: 20%;
+//   box-sizing: border-box;
+//   border: 1px solid red;
+// }
+//
+// @for $i from 0 through 4 {
+//     #mozaic_panel-#{$i} {top: 0%; left: 20% * $i};
+// }
+// $j : 0;
+// @for $i from 5 through 9 {
+//     #mozaic_panel-#{$i} {top: 20%; left: 20% * $j};
+//     $j : $j+1;
+// }
+// $j : 0;
+// @for $i from 10 through 14 {
+//     #mozaic_panel-#{$i} {top: 40%; left: 20% * $j};
+//     $j : $j+1;
+// }
+// $j : 0;
+// @for $i from 15 through 19 {
+//     #mozaic_panel-#{$i} {top: 60%; left: 20% * $j};
+//     $j : $j+1;
+// }
+// $j : 0;
+// @for $i from 20 through 24 {
+//     #mozaic_panel-#{$i} {top: 80%; left: 20% * $j};
+//     $j : $j+1;
+// }
