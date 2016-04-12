@@ -133,9 +133,26 @@ h4 {
 }
 
 #preview {
+  position: relative;
   img {
     width: 100%;
     height: auto;
+  }
+  .arrowNext {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    color: gray;
+    opacity: 0;
+  }
+  .arrowPrev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: gray;
+    opacity: 0;
+    display: none;
   }
 }
 
@@ -239,34 +256,76 @@ h4 {
 }
 
 
-// div[id*="mozaic_panel"] {
-//   position: absolute;
-//   width: 20%;
-//   height: 20%;
-//   box-sizing: border-box;
-//   border: 1px solid red;
-// }
-//
-// @for $i from 0 through 4 {
-//     #mozaic_panel-#{$i} {top: 0%; left: 20% * $i};
-// }
-// $j : 0;
-// @for $i from 5 through 9 {
-//     #mozaic_panel-#{$i} {top: 20%; left: 20% * $j};
-//     $j : $j+1;
-// }
-// $j : 0;
-// @for $i from 10 through 14 {
-//     #mozaic_panel-#{$i} {top: 40%; left: 20% * $j};
-//     $j : $j+1;
-// }
-// $j : 0;
-// @for $i from 15 through 19 {
-//     #mozaic_panel-#{$i} {top: 60%; left: 20% * $j};
-//     $j : $j+1;
-// }
-// $j : 0;
-// @for $i from 20 through 24 {
-//     #mozaic_panel-#{$i} {top: 80%; left: 20% * $j};
-//     $j : $j+1;
-// }
+// PROGRES BARY
+.skillbar {
+	position:relative;
+	display:block;
+	margin-bottom:15px;
+	width:100%;
+	background:#eee;
+	height:20px;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-webkit-transition:0.4s linear;
+	-moz-transition:0.4s linear;
+	-ms-transition:0.4s linear;
+	-o-transition:0.4s linear;
+	transition:0.4s linear;
+	-webkit-transition-property:width, background-color;
+	-moz-transition-property:width, background-color;
+	-ms-transition-property:width, background-color;
+	-o-transition-property:width, background-color;
+	transition-property:width, background-color;
+}
+
+.skillbar-title {
+	position:absolute;
+	top:0;
+	left:0;
+width:110px;
+	font-weight:bold;
+	font-size:13px;
+	color:#ffffff;
+	background:#6adcfa;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:4px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-title span {
+	display:block;
+	background:rgba(0, 0, 0, 0.1);
+	padding:0 20px;
+	height:20px;
+	line-height:20px;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:3px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-bar {
+	height:20px;
+	width:0px;
+	background:#6adcfa;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+}
+
+.skill-bar-percent {
+	position:absolute;
+	right:10px;
+	top:0;
+	font-size:11px;
+	height:20px;
+	line-height:20px;
+	color:#ffffff;
+	color:rgba(0, 0, 0, 0.4);
+}
